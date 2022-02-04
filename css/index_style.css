@@ -72,6 +72,11 @@ nav .nav-item {
 
 .social-icons a {
     color: white;
+    text-decoration: none;
+}
+
+.social-icon a {
+    text-decoration: none;
 }
 
 .social-icons i {
@@ -214,7 +219,7 @@ h5 {
 }
 
 .skills .back {
-    overflow: auto;
+    height: fit-content;
     border: none;
     border-radius: 0;
     padding: 0;
@@ -274,14 +279,16 @@ h5 {
     background-repeat: no-repeat;
     background-image: url(../images/website-design-essex.jpg);
     background-size: cover;
+    height: fit-content;
 }
 
 .projects .back {
-    overflow: hidden;
+
     z-index: 88888;
     background-color: rgba(70, 68, 68, 0.363);
     border: none;
     border-radius: 0;
+    height: 100%;
 }
 
 .projects .carousel-caption {
@@ -292,13 +299,14 @@ h5 {
 .item {
     box-sizing: border-box;
     padding: 15px;
-    width: 250px;
     overflow: hidden;
     border: rgba(0, 128, 128, 0.356);
     border-width: 1px;
     border-style: solid;
     border-radius: 5px;
     cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .item:hover {
@@ -306,27 +314,26 @@ h5 {
 }
 
 .proj1 {
-    background-size: cover;
-    background-repeat: no-repeat;
+
     background-image: url(../images/5.PNG);
 }
 
 .proj2 {
-    background-size: cover;
-    background-repeat: no-repeat;
+
     background-image: url(../images/4.PNG);
 }
 
 .proj3 {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../images/3.PNG);
+    background-image: url(../images/6.PNG);
 }
 
 .proj4 {
-    background-size: cover;
-    background-repeat: no-repeat;
+
     background-image: url(../images/ww.PNG);
+}
+
+.proj5 {
+    background-image: url(../images/3.PNG);
 }
 
 .item-cover {
@@ -398,9 +405,7 @@ h5 {
 .section-description {
     font-size: 1.5rem !important;
     text-align: center;
-    /* text-decoration: underline ;
-    text-decoration-style: solid;
-text-decoration-color: #525151;*/
+
 }
 
 textarea {
@@ -457,31 +462,37 @@ textarea {
     html, body {
         font-size: 14px;
     }
+
     .info {
         margin-bottom: 30px !important;
         border-radius: 5% !important;
         transform: skewX(0deg);
     }
+
     .navbar-collapse {
         background-color: rgb(10, 37, 85);
         text-align: center;
         width: 100% !important;
         margin-top: 5px;
     }
+
     .skill {
         padding: 0;
         box-sizing: border-box;
     }
+
     .skill i, .skill h4 {
         padding: 10px !important;
     }
+
     .item {
         width: 500px;
         margin: auto;
         margin-bottom: 10px;
     }
-    .first-pro {
-        margin-top: 250px;
+
+    .proj2, .proj4 {
+        margin-top: 10px;
     }
 }
 
@@ -489,39 +500,77 @@ textarea {
     html, body {
         font-size: 12px;
     }
+
     .profile-img img {
         width: 50% !important;
         margin-bottom: 10px;
     }
+
     .profile-info {
         margin-bottom: 50px;
     }
-    .social-icons {
+ .social-icons {
         font-size: 1.2rem;
         color: #fff;
         right: auto;
         margin: auto;
         text-align: center;
     }
+
     .social-icon {
         font-size: 1.5rem !important;
     }
+
     .social-icon i {
         padding: 10px;
     }
+
     table h5 {
         font-weight: 600 !important;
     }
-    .skill {
-        margin-right: 10px;
-    }
+
     .first {
         margin-top: 30px;
     }
+
     .last {
         margin-bottom: 20px !important;
     }
+
     .firstt {
         margin-top: 250px;
     }
+
+    .skills .container, .projects .container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .profile-img img {
+        width: 60% !important;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 2.8rem !important;
+    }
+
+    .profile-title span {
+        font-size: 2rem !important;
+    }
+
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 2.6rem !important;
+    }
+
+    .profile-title span {
+        font-size: 1.8rem !important;
+    }
+
 }
