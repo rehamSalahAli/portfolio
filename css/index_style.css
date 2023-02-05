@@ -102,7 +102,8 @@ nav .nav-item {
     box-shadow: none !important;
 }
 
-.about, .skill {
+.about,
+.skill {
     padding: 10px;
     box-shadow: 5px 5px 5px #888888;
 }
@@ -315,24 +316,28 @@ h5 {
 
 .proj1 {
 
-    background-image: url(../images/5.PNG);
+    background-image: url(../images/RS.PNG);
 }
 
 .proj2 {
 
-    background-image: url(../images/4.PNG);
+    background-image: url(../images/movies.PNG);
 }
 
 .proj3 {
-    background-image: url(../images/6.PNG);
+    background-image: url(../images/crud.PNG);
 }
 
 .proj4 {
 
-    background-image: url(../images/ww.PNG);
+    background-image: url(../images/market.PNG);
 }
 
 .proj5 {
+    background-image: url(../images/lashes.PNG);
+}
+
+.proj6 {
     background-image: url(../images/3.PNG);
 }
 
@@ -392,7 +397,8 @@ h5 {
     font-size: 1.2rem;
 }
 
-.contact, footer {
+.contact,
+footer {
     background: rgb(111, 111, 112);
     background: linear-gradient(90deg, rgba(12, 49, 105, 0.315) 10%, rgba(0, 213, 255, 0.267) 45%, rgba(53, 53, 85, 0.548) 65%, rgba(0, 213, 255, 0.384) 100%);
 }
@@ -413,7 +419,8 @@ textarea {
     padding: 5px;
 }
 
-.form-control, textarea {
+.form-control,
+textarea {
     font-size: 1.2rem;
     text-align: center;
 }
@@ -459,7 +466,9 @@ textarea {
 }
 
 @media (max-width: 768px) {
-    html, body {
+
+    html,
+    body {
         font-size: 14px;
     }
 
@@ -481,7 +490,8 @@ textarea {
         box-sizing: border-box;
     }
 
-    .skill i, .skill h4 {
+    .skill i,
+    .skill h4 {
         padding: 10px !important;
     }
 
@@ -491,13 +501,16 @@ textarea {
         margin-bottom: 10px;
     }
 
-    .proj2, .proj4 {
+    .proj2,
+    .proj4 {
         margin-top: 10px;
     }
 }
 
 @media (max-width: 576px) {
-    html, body {
+
+    html,
+    body {
         font-size: 12px;
     }
 
@@ -509,7 +522,8 @@ textarea {
     .profile-info {
         margin-bottom: 50px;
     }
- .social-icons {
+
+    .social-icons {
         font-size: 1.2rem;
         color: #fff;
         right: auto;
@@ -541,7 +555,8 @@ textarea {
         margin-top: 250px;
     }
 
-    .skills .container, .projects .container {
+    .skills .container,
+    .projects .container {
         padding-left: 3rem;
         padding-right: 3rem;
     }
