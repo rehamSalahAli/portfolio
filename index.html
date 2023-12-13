@@ -21,9 +21,10 @@
 
   <body>
     <header
-      class="d-flex flex-column justify-content-center align-items-center"
+      class="section d-flex flex-column justify-content-center align-items-center"
+      id="head"
     >
-      <nav class="navbar navbar-expand-md navbar-dark">
+      <nav class="navbar navbar-expand-md navbar-dark" id="nav">
         <div class="container">
           <a class="navbar-brand border border-primary rounded-circle" href="#"
             >RS</a
@@ -58,18 +59,12 @@
         class="profile-info container w-75 d-flex flex-row justify-content-around align-items-center text-white"
       >
         <div class="row">
-          <div class="profile-img col-sm-5 text-center">
-            <img
-              src="./images/pic2.jpg"
-              class="rounded-circle img-fluid"
-              alt="profile img"
-            />
-          </div>
-
-          <div class="profile-title text-center m-auto offset-1 col-sm-6">
+          <div class="profile-title text-center m-auto">
+            <p style="color: #f3faff">Hello, I'm</p>
             <h1>Reham Salah</h1>
-            <div class="type-wrap">
-              <span id="typed1" style="white-space: pre"></span>
+            <br />
+            <div class="type-wrap fw-bold">
+              <span id="typed1" style="white-space: break-spaces"></span>
             </div>
           </div>
         </div>
@@ -109,7 +104,7 @@
       </div>
     </header>
 
-    <section class="about my-5" id="about">
+    <section class="about section" id="about">
       <div
         class="my-2 d-flex flex-column justify-content-start align-items-center"
       >
@@ -122,25 +117,30 @@
         <img src="./images/menu-sep-big-1.png" />
       </div>
 
-      <div class="w-100 mt-5">
-        <div class="container">
-          <div class="row">
-            <div class="info col-md-3 offset-md-1 text-center">
+      <div class="w-100 mt-3">
+        <div class="container-fluid">
+          <div class="row justify-content-center align-items-center">
+            <div class="info col-lg-3 offset-lg-1 text-center">
               <div
-                class="back d-flex justify-content-center align-items-center"
+                id="textAbout"
+                class="justify-content-center align-items-center"
               >
-                <p class="p-1 text-center m-auto">
-                  Hello ,<br />
-                  Welcome everybody in my portfolio , you can find all
-                  information about me . <br />
-                  If you interested , <br />
-                  PLZ contact me ..
+                <p class="px-1 text-center py-sm-4">
+                  <span class="font-weight-bold anim-text"> Welcome, </span
+                  ><br /><br />
+                  <span class="">
+                    you can find all information about me <br />
+                    If you interested , <br /><br />
+                  </span>
+                  <span class="font-weight-bold an-text"
+                    >PLZ contact me ..
+                  </span>
                 </p>
               </div>
             </div>
-            <div class="col-md-7 offset-md-1">
+            <div class="col-lg-7 offset-lg-1">
               <div
-                class="card border-info rounded mb-3 w-100"
+                class="card border-info rounded mb-1 w-100"
                 style="max-width: 18rem"
               >
                 <div class="card-header">
@@ -195,7 +195,7 @@
                   >
                     <a
                       type="button"
-                      class="btn btn1 btn-outline-success mt-3 px-2"
+                      class="btn btn1 btn-outline-success mt-1 px-2"
                       href="#contact"
                       data-toggle="tooltip"
                       data-placement="top"
@@ -205,7 +205,7 @@
                     >
                     <a
                       type="button"
-                      class="btn btn2 btn-outline-warning mt-3 px-2"
+                      class="btn btn2 btn-outline-warning mt-1 px-2"
                       href="./cv.pdf"
                       data-toggle="tooltip"
                       data-placement="top"
@@ -266,7 +266,7 @@
       </div>
     </section>
 
-    <section class="my-5" id="skills">
+    <section class="section" id="skills">
       <div
         class="my-2 d-flex flex-column justify-content-start align-items-center"
       >
@@ -289,14 +289,14 @@
                 class="skill first col-md-3 col-sm-4 offset-sm-1 d-flex flex-column justify-content-center align-items-center bg-white mb-2"
               >
                 <i class="fab fa-html5 p-4 html"></i>
-                <h4 class="p-4">HTML / HTML5</h4>
+                <h4 class="p-4">HTML</h4>
               </div>
 
               <div
                 class="skill col-md-3 col-sm-4 offset-sm-1 d-flex flex-column justify-content-center align-items-center bg-white mb-2"
               >
                 <i class="fab fa-css3-alt p-4 css"></i>
-                <h4 class="p-4">CSS / CSS3</h4>
+                <h4 class="p-4">CSS</h4>
               </div>
               <div
                 class="skill col-md-3 col-sm-9 offset-sm-1 d-flex flex-column justify-content-center align-items-center bg-white mb-2"
@@ -310,7 +310,7 @@
                 class="skill col-md-3 col-sm-4 offset-sm-1 d-flex flex-column justify-content-center align-items-center bg-white mb-2"
               >
                 <i class="fab fa-bootstrap p-4 bootstrap"></i>
-                <h4 class="p-4">Bootstrap4</h4>
+                <h4 class="p-4">Bootstrap</h4>
               </div>
               <div
                 class="skill col-md-3 col-sm-4 offset-sm-1 d-flex flex-column justify-content-center align-items-center bg-white mb-2"
@@ -330,7 +330,7 @@
       </div>
     </section>
 
-    <section class="my-5" id="projects">
+    <section class="section" id="projects">
       <div
         class="my-2 d-flex flex-column justify-content-start align-items-center"
       >
@@ -408,7 +408,7 @@
               </div>
             </div>
 
-            <div class="row mt-3">
+            <div class="row mt-3 justify-content-center">
               <div class="col-md-5 col-s-12 proj5 item">
                 <div class="item-cover">
                   <h5>Lashes</h5>
@@ -425,29 +425,13 @@
                   ></a>
                 </div>
               </div>
-
-              <div class="col-md-5 offset-md-2 col-s-12 proj6 item">
-                <div class="item-cover">
-                  <h5>Etmn</h5>
-                  <p>
-                    provide specialized information on diseases, drugs,
-                    treatments
-                  </p>
-                  <a
-                    class="btn btn-primary px-2 mt-2"
-                    href="https://github.com/rehamSalahAli/rehamSalahAli"
-                  >
-                    Preview <i class="fas fa-eye ml-2"></i
-                  ></a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="mt-5" id="contact">
+    <section class="section" id="contact">
       <div
         class="my-2 d-flex flex-column justify-content-start align-items-center"
       >

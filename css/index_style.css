@@ -49,8 +49,10 @@ nav .nav-item {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.profile-title span {
-    font-size: 2rem !important;
+.profile-title p,
+span {
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 .profile-info {
@@ -80,6 +82,7 @@ nav .nav-item {
 }
 
 .social-icons i {
+
     background-color: rgb(10, 37, 85);
     border: white;
     border-width: 2px;
@@ -144,10 +147,11 @@ nav .nav-item {
     font-family: monospace;
     text-align: center;
     color: rgb(10, 37, 85);
+    padding: 0.3rem !important;
 }
 
 .card-header span {
-    font-size: 1.2rem;
+    font-size: 1.7rem !important;
     color: rgb(92, 90, 90);
 }
 
@@ -185,34 +189,67 @@ h5 {
     transform: skewX(-20deg);
 }
 
-.back {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.685);
-    border-width: 2px;
-    border-radius: 10%;
+
+#textAbout {
+    position: relative;
+    transition: all 1s;
+    transition-delay: 0.5s;
+
 }
 
-.info {
-    border: rgb(10, 37, 85);
-    border-width: 2px;
-    border-radius: 10%;
-    background-image: url(../images/RlgcbA5.jpg);
-    background-size: cover;
-    font-size: 1.5rem;
-    color: white;
-    overflow: hidden;
-    padding: 0;
-    transform: skewX(10deg);
-    transition: all 0.5;
+.info p span {
+    font-size: 1.7rem;
 }
 
-.info:hover {
-    transform: skewX(0deg);
+.info p .anim-text {
+    font-family: 'Coiny', cursive;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url(../images/textBack.jpg);
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: 0%;
+    width: 80%;
+    margin: 10%;
+    font-size: 2rem;
+    animation: text-moving infinite 20s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    text-align: center;
+    letter-spacing: 7px;
+    line-height: 40px;
+}
+
+.an-text {
+    text-transform: capitalize;
+    color: #d48403;
+    letter-spacing: 4px;
+    line-height: 40px;
+}
+
+@keyframes text-moving {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 50%;
+    }
+
+    100% {
+        background-position: 0%;
+    }
+}
+
+.attribute {
+    position: relative;
+    font-size: 26px;
+    text-align: center;
 }
 
 .skills {
-    background-image: url(../images/Web-Development-Skills.png);
+    background-image: url(../images/skillsImg.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0;
@@ -220,7 +257,7 @@ h5 {
 }
 
 .skills .back {
-    height: fit-content;
+    height: auto;
     border: none;
     border-radius: 0;
     padding: 0;
@@ -232,9 +269,10 @@ h5 {
 }
 
 .skill i {
-    font-size: 3rem;
+    font-size: 2rem;
+    padding-bottom: 10px;
     color: rgb(10, 37, 85);
-    transition: all 0.5s;
+    transition: all 0.7s;
 }
 
 .skill:hover h4 {
@@ -278,7 +316,7 @@ h5 {
 .projects {
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-image: url(../images/website-design-essex.jpg);
+    background-image: url(../images/projectImg.jpg);
     background-size: cover;
     height: fit-content;
 }
@@ -366,6 +404,7 @@ h5 {
     line-height: 35px !important;
     letter-spacing: 2px;
     font-family: cursive;
+
 }
 
 .item:hover .item-cover {
@@ -455,6 +494,12 @@ textarea {
     color: rgb(10, 37, 85);
     background-color: white;
     border: rgb(10, 37, 85) !important;
+}
+
+.status {
+    font-size: 1.5rem;
+    color: rgb(185, 10, 10);
+    font-weight: 500;
 }
 
 .back-to-top {
